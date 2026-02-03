@@ -16,12 +16,12 @@ const App = () => {
      const newFilter =data.filter((value) =>{
     return value.title.toLowerCase().includes(searchWord.toLowerCase());
   })
-  // if(searchWord === ""){
-  //   setFilteredData([]);
-  // }else{
-  //   setFilteredData(newFilter); 
-  // }
-  setFilteredData(newFilter); 
+  if(searchWord === ""){
+    setFilteredData([]);
+  }else{
+    setFilteredData(newFilter); 
+  }
+  // setFilteredData(newFilter); 
   }
 
   return (
